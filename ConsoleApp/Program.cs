@@ -4,15 +4,19 @@ namespace Aula01;
 public class Program 
 { 
     public static void Main() 
-    { 
-        Console.WriteLine("-----Cadastro de usuario-----");
-        Console.Write("Digite o seu nome: ");
-        string name = Console.ReadLine();
-
-
-        Console.WriteLine("Digite sua idade: ");
-        int age = Convert.ToInt32(Console.ReadLine());
-        Console.Write("Seu nome é " + name + "Sua idade é: " + age);
+    {
+        Console.WriteLine("====Verificador de numeros pares ou impares====");
+        Console.WriteLine("Digite um numero: ");
+        int number = Convert.ToInt32(Console.ReadLine());
+        int Result = number % 2;
+        if (Result == 0)
+        {
+            Console.WriteLine("O numero " + number + " é par");
+        }
+        else
+        {
+            Console.WriteLine("O numero " + number + " é impar");
+        }
     }
 
 }
