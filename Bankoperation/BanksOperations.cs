@@ -29,6 +29,7 @@
             {
                 if(amount <= balance)
                 {
+                    balance -= amount;
                     Console.WriteLine($"Valor de R$ {amount} retirado com sucesso!");
                 }
                 else
