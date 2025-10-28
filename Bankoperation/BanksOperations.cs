@@ -25,7 +25,7 @@
         public void WithDraw()
         {
             Console.WriteLine("Informe o valor a ser retirado: R$ ");
-            if (decimal.TryParse(Console.ReadLine(), out decimal amount) && amount > 0)
+            if (decimal.TryParse(Console.ReadLine(), out decimal amount) && amount > 0) //verifica se o valor é válido, podendo ser escrito (zero)
             {
                 if(amount <= balance)
                 {
